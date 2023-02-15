@@ -149,6 +149,7 @@ function App() {
 						{
 							name: 'agents',
 							list: Agents,
+							show: AgentProfile,
 							icon: <PeopleAltOutlined />,
 						},
 						{

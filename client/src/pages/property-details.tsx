@@ -141,6 +141,7 @@ const PropertyDetails = () => {
 									borderRadius: '100%',
 									objectFit: 'cover',
 								}}
+								referrerPolicy='no-referrer'
 							/>
 
 							<Box mt='15px'>
