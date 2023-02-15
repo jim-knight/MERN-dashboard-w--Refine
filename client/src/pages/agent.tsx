@@ -9,8 +9,6 @@ const Agents = () => {
 	});
 	const allAgents = data?.data ?? [];
 
-	console.log(allAgents);
-
 	if (isLoading) return <div>Loading...</div>;
 	if (isError) return <div>Error</div>;
 
