@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Refine, AuthProvider } from '@pankod/refine-core';
 import {
 	notificationProvider,
@@ -13,31 +11,19 @@ import {
 import {
 	AccountCircleOutlined,
 	ChatBubbleOutline,
-	People,
 	PeopleAltOutlined,
 	StarOutlineRounded,
 	VillaOutlined,
 } from '@mui/icons-material';
 
 import dataProvider from '@pankod/refine-simple-rest';
-import { MuiInferencer } from '@pankod/refine-inferencer/mui';
 import routerProvider from '@pankod/refine-react-router-v6';
 import axios, { AxiosRequestConfig } from 'axios';
 import { ColorModeContextProvider } from 'contexts';
 import { Title, Sider, Layout, Header } from 'components/layout';
 
 // Pages
-import {
-	Login,
-	Home,
-	Agents,
-	MyProfile,
-	PropertyDetails,
-	AllProperties,
-	CreateProperty,
-	AgentProfile,
-	EditProperty,
-} from 'pages';
+import { Login, Home, Agents, PropertyDetails, AllProperties, CreateProperty, AgentProfile, EditProperty } from 'pages';
 
 // Credentials
 import { CredentialResponse } from 'interfaces/google';
@@ -149,6 +135,7 @@ function App() {
 						{
 							name: 'agents',
 							list: Agents,
+							show: AgentProfile,
 							icon: <PeopleAltOutlined />,
 						},
 						{
